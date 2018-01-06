@@ -1,0 +1,46 @@
+#:kivy 1.0.9
+
+<BrailleGui>:
+    BoxLayout:
+        orientation:'vertical'
+        pos:root.pos
+        size:root.size
+        BoxLayout:
+            id:toolBar
+            size_hint:(1,.2)
+            orientation:'horizontal'
+            Button:
+                on_press:root.sendTextToPrinter()
+                id:btnPrinter
+                width:50
+                size_hint:(None, 1)
+                width: self.height
+                Image:
+                    source:"printer.jpeg"
+                    y: self.parent.y + self.parent.height-self.parent.height*.9
+                    x:  self.parent.width * .1
+                    size: (self.parent.width * .8,self.parent.height*.8)
+                    allow_stretch: True
+            
+            Button:
+                id:selectOutput
+                size_hint:(None, 1)
+                width: self.height*.9
+                on_press:root.selectOutputOptions()
+                Image:
+                    source:"output.png"
+                    y: self.parent.y + self.parent.height-self.parent.height*.9
+                    x: self.parent.x + self.parent.width * .1
+                    size: (self.parent.width * .8,self.parent.height*.8)
+                    allow_stretch: True
+        TextInput
+            size_hint:(1,.7)
+            font_size:25
+            id:textToSend
+        ProgressBar:
+            id:printingProgress
+            size_hint:(1,.1)
+    BoxLayout:
+        id:outputOptions
+        orientation:'vertical'
+        pos_hint:(None,None)
