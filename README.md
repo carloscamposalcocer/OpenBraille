@@ -50,7 +50,7 @@ For the User Interface you will need to install kivi:
 
 https://kivy.org/#home
 
-Once the User interface is launched, you will need to connect to the printer, then you can send the impression.
+Once the User Interface is launched, you will need to connect to the printer, then you can send the print.
 
 Happy embossing
 
