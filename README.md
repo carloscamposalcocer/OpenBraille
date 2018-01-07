@@ -58,3 +58,5 @@ Happy embossing
 # Credits
 
 Special thanks to David Paché for his contribution on the User Interface!!
+
+Y muchas gracias por su ayuda!
