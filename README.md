@@ -18,7 +18,7 @@ There are two parts to the software, you will need to install the firmware on yo
 
 # Arduino
 
-OpenBraille uses the firmware comonly used on 3Dprinters (Marlin firmware) if you use the exact same hardware as i did you can use the files included. Otherwise you will need to modify a few parameters. Most likely you will have to change the step per unit depending on the stepper motor installed on your printer. You will find the following line on the file Marlin/Configuration.h
+OpenBraille uses the firmware for 3Dprinters (Marlin firmware). If you use the exact same hardware as I did you can use the files included. Otherwise you will need to modify a few parameters. Most likely you'll have to change the steps-per-unit depending on the stepper motor installed on your printer. You will find the following line on the file Marlin/Configuration.h
 
 
 #define DEFAULT_AXIS_STEPS_PER_UNIT    {800, 800, 167,500}     // line 479 
