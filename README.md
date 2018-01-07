@@ -53,3 +53,8 @@ https://kivy.org/#home
 Once the User interface is launched, you will need to connect to the printer, then you can send the impression.
 
 Happy embossing
+
+
+# Credits
+
+Special thanks to David Paché for his contribution on the User Interface!!
